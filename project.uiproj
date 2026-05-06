@@ -1,0 +1,6 @@
+{
+  "Name": "Generate_Wagelist_For_Payment",
+  "ProjectType": "Process",
+  "Description": "This bot is designed to generate the Muster Roll based on the data provided in the excel template",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "db861f30-a213-4a72-972a-d7b58cff08eb",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_OrchestratorQueueName": {
+            "type": "string",
+            "description": "Allows the Orchestrator queue name to be passed as an argument, instead of only being defined in the configuration file."
+          },
+          "in_OrchestratorQueueFolder": {
+            "type": "string",
+            "description": "Allows the Orchestrator folder name where the queue is created to be passed as an argument, instead of only being defined in the configuration file."
+          },
+          "in_ExcelFilePath": {
+            "type": "string",
+            "x-default-expression": "\"C:\\Users\\\"+ Environment.UserName +\"\\Desktop\\MR-bot.xlsx\""
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}
